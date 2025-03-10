@@ -18,3 +18,15 @@ result = st.button("Convert", type="primary")
 if result:
     converted_value = (quantity * ureg(from_unit)).to(to_unit)
     st.success(f"{quantity} {from_unit} = {converted_value:.4f} {to_unit}")
+
+#adding footnote
+st.write("")
+st.write("")
+st.write("")
+st.markdown("---")  # Adds a horizontal line for separation
+st.markdown("""
+    <p>⭐ 
+    <span style="font-size: 13px;">Developed by</span>
+    <span style="font-size: 18px; font-weight: bold; color: #6c3483;">WARISHA SOHAIL</span> — 
+    <span style="font-size: 12px;"> GIAIC-WED (7PM-10PM)</span></p>
+    """, unsafe_allow_html=True)
